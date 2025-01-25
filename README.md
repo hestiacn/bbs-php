@@ -14,37 +14,40 @@ ___
 #### 项目结构 /bbs/
 
 ``` sh
-├── config/ # 项目配置文件
-	├── config.php # 配置文件
-├── core/ # 核心文件
-	├── mysqlDB.php # 数据库连接文件
-	├── upload.php # 上传文件操作
-├── model/ # 业务模块
-	├── list_father.php
-	├── login.php
-	├── publish.php
-	├── publish_deal.php
-	├── register.php
-	├── reply.php
-	├── reply_deal.php
-	├── show.php
-	├── userInfo.php
-	├── validate.php
-├── public/ # 静态资源存放目录
-├── uploads/  # 文件上传目录
-├── views/ # 视图目录
-    ├── index.html   
-    ├── list_father.html
-    ├── list_son.html
-    ├── login.html
-    ├── publish.html
-    ├── quote.html
-    ├── register.html
-    ├── reply.html
-    ├── show.html
-├── index.php # 项目入口文件
-├── init.php # 项目初始化文件
-
+├── config/
+│   └── config.php
+├── core/
+│   ├── mysqlDB.php
+│   └── upload.php
+├── model/
+│   ├── list_father.php
+│   ├── login.php
+│   ├── publish.php
+│   ├── publish_deal.php
+│   ├── register.php
+│   ├── reply.php
+│   ├── reply_deal.php
+│   ├── show.php
+│   ├── userInfo.php
+│   ├── validate.php
+│   └── markdown.php (新增，用于处理Markdown)
+├── public/
+│   └── (静态资源，如CSS、JS等)
+├── uploads/
+├── views/
+│   ├── index.html
+│   ├── list_father.html
+│   ├── list_son.html
+│   ├── login.html
+│   ├── publish.html
+│   ├── quote.html
+│   ├── register.html
+│   ├── reply.html
+│   ├── show.html
+│   └── markdown_preview.html (新增，用于Markdown预览)
+├── index.php
+├── init.php
+└── .htaccess (可选，用于Apache服务器配置)
 ```
 
 ### 项目介绍
